@@ -8,10 +8,10 @@ const ExerciseCard = ({exercise}) => {
     <img src={exercise.gifUrl} alt={exercise.name}
 Loading="lazy" />  
 <Stack direction="row">
-    <Button  sx={{ml:'21px', color:'#fff' , background:"#ffa9a9", fontSize:'14px',borderRadius:'20px', textTransform:'capitalize'}}>
+    <Button  sx={{ml:'21px', color:'black' ,backgroundColor :"#ffa9a9", fontSize:'14px',borderRadius:'20px', textTransform:'capitalize'}}>
         {exercise.bodyPart}
     </Button>
-    <Button  sx={{ml:'21px', color:'#fff' , background:"#ffcc757", fontSize:'14px',borderRadius:'20px', textTransform:'capitalize'}}>
+    <Button  sx={{ml:'21px', color:'blue' , backgroundColor:"yellow", fontSize:'14px',borderRadius:'20px', textTransform:'capitalize'}}>
         {exercise.target}
     </Button>
     </Stack> 
@@ -19,7 +19,8 @@ Loading="lazy" />
     sx={{fontSize:{lg:'24px', xs:'20px'}}}
     mt="11px" 
     pb="10px" textTransform="capitalize">{exercise.name}
-        </Typography> </Link>
+        </Typography> 
+        </Link>
   );
 };
 
